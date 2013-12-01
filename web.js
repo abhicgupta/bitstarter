@@ -5,7 +5,7 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   var web = fs.readFileSync('index.html');
-  var str = web.toString(web);
+  var str = web.toString();
   response.send(str);
   //sponse.send('Hello World 2!');
 });
